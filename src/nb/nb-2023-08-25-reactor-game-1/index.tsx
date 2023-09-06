@@ -1,6 +1,7 @@
 import { retroThemeCss } from "../nb-2023-07-06/retro-theme-css";
 import { ReactionCardListView } from "./app/reaction-card-list-view";
 import { ReactorView } from "./app/reactor-view";
+import { StepIndicators } from "./app/step-indicators";
 
 export default function Component() {
     return (
@@ -24,6 +25,7 @@ export default function Component() {
                     flex: "1",
                     overflowY: "auto",
                 }}>
+                    <StepIndicators/>
                     <ReactionCardListView num={0} />
                 </div>
                 <div css={{
